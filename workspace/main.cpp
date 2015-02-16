@@ -1,7 +1,7 @@
-//Test thing
+//How do I stop this crazy thing?
 //Eric Wilson
 
-//Oh, and apparently there's an option under the 'Edit' menu to use Vim key bindings.
+//Oh, and apparently there's an option under the 'Edit' menu to use Vim key bindings. 
 #include <iostream>
 #include "date.cpp"
 #include "menu.cpp"
