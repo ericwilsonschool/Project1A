@@ -1,4 +1,4 @@
-//How do I stop this crazy thing?
+//Tomorrow Tomorrow I love you tomorrow
 //Eric Wilson
 
 //Oh, and apparently there's an option under the 'Edit' menu to use Vim key bindings. 
