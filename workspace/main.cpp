@@ -1,4 +1,4 @@
-//Tomorrow Tomorrow I love you tomorrow
+//Why are there so many ostritches?
 //Eric Wilson
 
 //Oh, and apparently there's an option under the 'Edit' menu to use Vim key bindings. 
