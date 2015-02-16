@@ -1,5 +1,6 @@
 //Test thing
 //Eric Wilson
+//This is the test!
 
 //Oh, and apparently there's an option under the 'Edit' menu to use Vim key bindings.
 #include <iostream>
