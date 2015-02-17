@@ -6,6 +6,7 @@ class Assignment{
   private:
     Date due;
     Date completed;
+    Date assigned;
     string description;
     bool isLate;
   public:

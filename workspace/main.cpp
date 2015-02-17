@@ -6,7 +6,7 @@
 #include "date.cpp"
 #include "menu.cpp"
 
-using namespace std;
+using namespace std;//Can you see this?Shit. 
 
 int main()
 { 
