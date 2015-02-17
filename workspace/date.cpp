@@ -12,7 +12,7 @@ class Date{
     Date(int , int, int);
     Date();
     void print();
-    void change(int , int , int );
+    void change(int , int , int );//Probably replace this with OL = operator
   
 };
 
