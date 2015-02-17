@@ -1,5 +1,6 @@
 //Just a stupid dream... :(
 //Eric Wilson
+//John's first commit
 #include <iostream>
 using namespace std;
 
