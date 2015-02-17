@@ -1,4 +1,4 @@
-//Why are there so many ostritches?
+//Do you have any shit for my ham?
 //Eric Wilson
 
 //Oh, and apparently there's an option under the 'Edit' menu to use Vim key bindings. 
