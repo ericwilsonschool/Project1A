@@ -1,27 +1,17 @@
-//Do you have any shit for my ham?
 //Eric Wilson
 
 //Oh, and apparently there's an option under the 'Edit' menu to use Vim key bindings. 
-#include <iostream>
-#include "date.cpp"
-#include "menu.cpp"
+#include "Date.h"
+ //#include "menu.cpp"
 
 using namespace std;//Can you see this?Shit. 
 
 int main()
 { 
- Date newDate (11,19,1987); //test constructor with my birfday
- Date newDate2;//test default constructor
+  Date newDate;
+  newDate = "20150218";
   
-  newDate.print();
-  cout << '\n';
-  newDate2.print();
-  cout << '\n';
-  newDate2.change(11, 13, 1989); //test change function with Brittney's birfday.
-  newDate2.print();
-  cout << '\n';
+  cout << "It ran.\n";
   
-  mainMenu();//start menu navigation (menu.cpp)
-
   return 0;
 }
