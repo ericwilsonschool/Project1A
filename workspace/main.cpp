@@ -1,6 +1,7 @@
 //Eric Wilson
 //#include "Date.h"
 //#include "linked_list.cpp"
+#include "menu.cpp"
 #include <list>
 #include <iostream>
  //#include "menu.cpp"
@@ -21,21 +22,24 @@ using namespace std;//Can you see this?Shit.
 //}
 
 int main()
-{ 
+{
+    mainMenu();
 //  Date newDate; //Default constructor
 //  newDate = "20150218"; //assignment operator
 //  Date newDate2;
 //  newDate2 = "19991231";
     
-    list <int> test;
-    test.push_front(1);
-    test.push_front(2);
-    test.push_front(3);
     
-    for(list <int> :: iterator iter = test.begin(); iter != test.end(); iter++)
-    {
-        cout << *iter << endl;
-    }
+    
+//    list <int> test;
+//    test.push_front(1);
+//    test.push_front(2);
+//    test.push_front(3);
+//    
+//    for(list <int> :: iterator iter = test.begin(); iter != test.end(); iter++)
+//    {
+//        cout << *iter << endl;
+//    }
   
 //  cout << newDate2.toInt() << endl;
 //  cout << newDate << " > " << newDate2 << ": " << (newDate > newDate2) << endl;

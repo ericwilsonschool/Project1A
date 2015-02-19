@@ -12,8 +12,6 @@ class assigned_homework{
         list <Assignments> a_list;
     }
     
-    assigned (); //Pass file in, read contents and put into list
-    
     void display (const list <Assignment> a_list){
         for(list <Assignment> :: iterator iter = a_list.begin(); iter != a_list.end(); iter++){
             cout << *iter << endl;
