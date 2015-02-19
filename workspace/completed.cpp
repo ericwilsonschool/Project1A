@@ -1,6 +1,5 @@
 #include "Date.h"
 #include "Assignment.h"
-#include "Node.h"
 #include "linked_list.cpp"
 #include <string>
 using namespace std;
