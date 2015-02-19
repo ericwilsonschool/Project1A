@@ -26,4 +26,4 @@ CHANGES
   stuff like Date newDate = "20150218"; into something like Date newDate; newDate = "20150218"; All inequality operators turn Date objects into
   integers and compare them. (Most recent git push to newDate_h branch)
   
-  20150219 - (John) Created two classes for the assigned and completed assignments. Changed the assignment.h to a struct. Created a linked list class. Looked at the doubly linked list source code on blakcboard and implemented functions needed.
+  20150219 - (John) Created two classes for the assigned and completed assignments. Changed the assignment.h to a struct. Created a linked list class. Looked at the doubly linked list source code on blakcboard and implemented functions needed. Removed non necessary files or duplicates. 
