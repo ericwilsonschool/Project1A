@@ -23,11 +23,13 @@ class linked_list{
 };
 
 linked_list :: linked_list (){
-  
+    head = NULL;
+    tail = NULL;
 }
 
 linked_list :: linked_list (item_type data){
-  
+    head = data;
+    tail = data;
 }
 
 linked_list :: ~linked_list (){
