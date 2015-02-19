@@ -1,12 +1,25 @@
 #include <iostream>
+#include <fstream>
+#include <list>
+#include "Assignment.h"
 using namespace std;
 
 void displaySubmenu();
 void addSubmenu();
 void editSubmenu();
+void readFile(ifstream& fin, list <Assignment>& completed, list <Assignment>& assigned);
 
 void mainMenu(){
      char menuSelection;
+    string file;
+    list <Assingment> completed;
+    list <Assignment> assigned;
+    
+    cout << "enter name of file to read assignements from: ";
+    getline(cin, file);
+    ifstream fin (file);
+    readFile(fin, completed, assigned);
+    
   while (1){ //Dangerous retard code 
     cout << "\nMAIN MENU\n1. View assignments\t\t2. Add assignments\n"
       << "3. Edit assignments\t\t4. Complete assignments\n"
@@ -127,4 +140,7 @@ void addSubmenu(){/
                 break; //restarts while(1) loop
         }
     }
+}
+void readFile(ifstream& fin, list <Assignment>& completed, list <Assignment>& assigned){
+    //Get line, parse info, add to appropriate list
 }
