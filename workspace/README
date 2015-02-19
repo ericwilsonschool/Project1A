@@ -1,0 +1,11 @@
+To compile:
+> navigate to workspace directory
+>type
+  g++ -std=c++0x main.cpp
+>if no errors, run program using
+  ./a.out
+  
+  
+BASIC GIT COMMANDS
+> To set upstream branch on a new branch
+  git push --set-upstream origin <branch name>

@@ -20,11 +20,23 @@ public:
       this->d = 0;
    }
    Date(const string& str){ //copy constructor
-      *this = str;
+           if (isValidString(str)){
+            this->y = stoi(str.substr(0, 4));
+            this->m = stoi(str.substr(4, 2));
+            this->d = stoi(str.substr(6, 2));
+         }
     }
-  Date(const Date& rhs){ //copy constructor
+   Date(const Date& rhs){ //copy constructor
     *this = rhs;
     }
+   int toInt()const{
+    int iDate = 0;
+    iDate += y * 10000;
+    iDate += m * 100;
+    iDate += d;
+    
+    return iDate;
+  }
    bool isValidString(const string str){//tests validity of string passed as date.
       int mo, dy;
       //try{
@@ -109,10 +121,6 @@ public:
       }*/
       return true;
    }
-
-   bool isValidDate(){
-      return false;
-   }
 ////OPERATORS////{=Date, =string, >, <, <=, >=, <<}
    Date& operator=(const Date& rhs){//OL Assignment
       //check if they're the same
@@ -143,44 +151,28 @@ public:
       }
    }
    bool operator>(const Date& rhs){
-      if (y <= rhs.y)
-         return false;
-      else if (m <= rhs.m)
-         return false;
-      else if (d <= rhs.d)
-         return false;
-      else
-         return true;
-   }
+     if ((this->toInt()) > rhs.toInt())
+       return true;
+    else
+      return false;
+  }
    bool operator<(const Date& rhs){
-      if (y >= rhs.y)
-         return false;
-      else if (m >= rhs.m)
-         return false;
-      else if (d >= rhs.d)
-         return false;
-      else
-         return true;
+      if ((this->toInt()) < rhs.toInt())
+        return true;
+     else
+       return false;
    }
    bool operator<=(const Date& rhs){
-      if (y > rhs.y)
-         return false;
-      else if (m > rhs.m)
-         return false;
-      else if (d > rhs.d)
-         return false;
-      else
-         return true;
+     if ((this->toInt()) <= rhs.toInt())
+       return true;
+     else
+       return false;
    }
    bool operator>=(const Date& rhs){
-      if (y < rhs.y)
-         return false;
-      else if (m < rhs.m)
-         return false;
-      else if (d < rhs.d)
-         return false;
-      else
-         return true;
+     if ((this->toInt()) >= rhs.toInt())
+       return true;
+     else
+       return false;
    }
    friend ostream& operator<< (ostream& out, Date& date){
       out << setfill('0') << setw(4) << date.y
