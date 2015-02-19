@@ -1,9 +1,15 @@
-#include 'Node.h'
 #include <string>
 using namespace std;
 
 template <typename item_type>
 class linked_list{
+    
+    struct Node{
+        item_type data;
+        Node* next;
+        Node* prev;
+    };
+    
   public:
   linked_list ();
   linked_list (item_type data);
