@@ -1,15 +1,15 @@
 #ifndef _iterator_h
 #define _iterator_h
+#include "linked_list.cpp"
 class iterator{
-    friend class linked_list;
-    
 private:
-    linked_list* parent;
-    typename linked_list::Node* current;
-    iterator(linked_list* my_parent, Node* position) : parent(my_parent),
+    linked_list<T>* parent;
+    typename linked_list<T>::Node* current;
+    iterator(linked_list<T>* my_parent, Node* position) : parent(my_parent),
     current(position) {}
 
 public:
+    friend class <T>linked_list;
     T& operator* () const {
         if (current == NULL)
             throw std :: invalid_argument("Attempting to derefernce end");

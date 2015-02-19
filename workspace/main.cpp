@@ -4,19 +4,19 @@
  //#include "menu.cpp"
 
 using namespace std;//Can you see this?Shit.
-void print_list(const linked_list& li){
-    
-    linked_list::iterator iter = li.begin();
-    
-    while (iter != li.end()){
-        cout << *iter;
-        ++iter;
-        if (iter != li.end())
-            cout << " ===> ";
-    }
-    
-    cout << '\n';
-}
+//void print_list(const linked_list<int>& li){
+//    
+//    linked_list<int>::iterator iter = li.begin();
+//    
+//    while (iter != li.end()){
+//        cout << *iter;
+//        ++iter;
+//        if (iter != li.end())
+//            cout << " ===> ";
+//    }
+//    
+//    cout << '\n';
+//}
 
 int main()
 { 
@@ -28,10 +28,10 @@ int main()
   cout << newDate2.toInt() << endl;
   cout << newDate << " > " << newDate2 << ": " << (newDate > newDate2) << endl;
 
-    linked_list test = new linked_list;
+    linked_list <int> test = new linked_list <int>; //COPY CONSTRUCTORRRRRRRR
     test.add_node(1234);
-    test.add_node("testing");
-    print_list(test);
+    test.add_node(5678);
+    test.print_list();
   
   //cout << "newDate: " << newDate << ' ' << "newDate2: " << newDate2 << endl; //stream insertion operator
   //cout << "newDate > newDate2: " << (newDate > newDate2) << endl;
