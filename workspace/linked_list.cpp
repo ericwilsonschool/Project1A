@@ -1,15 +1,15 @@
 #include <string>
 using namespace std;
 
-template <typename item_type>
+template <typename T>
 class linked_list{
     
 private:
     struct Node{
-        item_type data;
+        T data;
         Node* next;
         Node* prev;
-        Node(const item_type& data_item, Node* prev_val = NULL, Node* next_val = NULL) :
+        Node(const T& data_item, Node* prev_val = NULL, Node* next_val = NULL) :
         data(data_item), prev(prev_val), next(next_val) {}
     };
     
@@ -17,11 +17,11 @@ private:
     Node*tail;
     int num_items;
     
-  public:
+public:
     linked_list () : head(NULL) tail(NULL) num_items(0);
     ~linked_list ();
-    void add_node (const item_type& data);
-    void delete_node (const item_type& data);
+    void add_node (const T& data);
+    void delete_node (const T& data);
     void pop_back ();
     bool is_empty ();
 
@@ -38,7 +38,7 @@ linked_list :: ~linked_list (){
     num_items = 0;
 }
 
-void linked_list :: add_node (const item_type& data){ //Adds to front
+void linked_list :: add_node (const T& data){ //Adds to front
     head = new Node(item, NULL, head);
     if (head->next != NULL)
         head->next->prev = head;
@@ -47,7 +47,7 @@ void linked_list :: add_node (const item_type& data){ //Adds to front
     num_items++;
 }
 
-void linked_list :: delete_node (const item_type& data){
+void linked_list :: delete_node (const T& data){
     Node* current_node = head;
     
     while (current_node != NULL){
