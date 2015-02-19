@@ -38,6 +38,7 @@ Date& Date::operator=(const Date& rhs){//OL Assignment
 
 Date& Date::operator=(const string& other){
 //int yr, mo, dy;
+  cout << "This this this\n";
 try{
   if (isValidString(other)){
       this->y = stoi(other.substr(0, 4));
